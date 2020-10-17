@@ -1,9 +1,20 @@
 {
   "name": "gordeszkamag-splash",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "git@github.com:grandpalacko/gordeszkamag.git",
   "author": "Laszlo Tamas <tamas.lacko@gmail.com>",
   "private": true,
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel serve ./src/index.html",
+    "build": "parcel build --no-source-maps ./src/index.html"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.0.1",
+    "parcel": "2.0.0-nightly.419",
+    "postcss": "8.1.1"
+  },
+  "browserslist": [
+    "> 0.25%"
+  ]
 }
