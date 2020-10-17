@@ -8,7 +8,7 @@
   "scripts": {
     "clean": "rm -rf ./dist",
     "start": "parcel serve ./src/index.html",
-    "build": "yarn clean && parcel build --no-source-maps ./src/index.html",
+    "build": "yarn clean && parcel build --no-source-maps --public-url https://gordeszkamag.hu ./src/index.html",
     "deploy": "yarn build && gh-pages -d dist"
   },
   "devDependencies": {
